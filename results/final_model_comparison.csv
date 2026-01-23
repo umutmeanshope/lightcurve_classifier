@@ -1,0 +1,5 @@
+Model,Best Threshold,Precision,Recall,F1 Score
+Random Forest,0.48,0.63,0.713,0.669
+SVM,0.4,0.516,0.902,0.657
+Cascade Classifier (SVM+RF),-,0.649,0.697,0.672
+Voting Ensemble (RF+SVM),0.46,0.589,0.787,0.674

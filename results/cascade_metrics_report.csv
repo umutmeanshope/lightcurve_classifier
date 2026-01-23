@@ -1,0 +1,2 @@
+Model,Precision,Recall,F1 Score
+Cascade Classifier (SVM+RF),0.649,0.697,0.672

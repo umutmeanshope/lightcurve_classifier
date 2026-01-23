@@ -1,0 +1,7 @@
+Model,Best CV Score (F1),Best Threshold,Precision,Recall,New F1,Best Params
+Random Forest,0.628,0.48,0.63,0.713,0.669,"{'model__bootstrap': True, 'model__criterion': 'gini', 'model__max_depth': 23, 'model__max_features': None, 'model__min_samples_leaf': 9, 'model__min_samples_split': 16, 'model__n_estimators': 114}"
+SVM,0.618,0.4,0.516,0.902,0.657,"{'model__C': np.float64(726.1414516028826), 'model__gamma': 'auto', 'model__kernel': 'rbf'}"
+Gradient Boosting,0.611,0.44,0.54,0.828,0.654,"{'model__learning_rate': np.float64(0.011500412753684741), 'model__max_depth': 6, 'model__max_features': 'log2', 'model__min_samples_leaf': 15, 'model__min_samples_split': 16, 'model__n_estimators': 150, 'model__subsample': np.float64(0.8147385973801488)}"
+KNN,0.612,0.54,0.564,0.762,0.648,"{'model__n_neighbors': 11, 'model__p': 1, 'model__weights': 'distance'}"
+Logistic Regression,0.609,0.5,0.526,0.82,0.641,"{'model__C': np.float64(0.00010108171343846384), 'model__penalty': 'l2'}"
+Decision Tree,0.596,0.1,0.445,0.967,0.61,"{'model__criterion': 'entropy', 'model__max_depth': 3, 'model__max_features': None, 'model__min_samples_leaf': 5, 'model__min_samples_split': 4}"
