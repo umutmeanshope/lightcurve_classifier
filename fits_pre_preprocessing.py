@@ -18,18 +18,20 @@ def download_fits(folder_path: str, tid: str, overwrite: bool =False) -> None:
         tid (str): tid id of the fits file
         overwrite (bool, optional): overwrite existing files. Defaults to False.
     """
+    try:
 
-    search: lk.SearchResult = lk.search_lightcurve(f"TIC {tid}", mission="TESS", author="SPOC")
-    if len(search) == 0:
-        return None
+        search: lk.SearchResult = lk.search_lightcurve(f"TIC {tid}", mission="TESS", author="SPOC")
+        if len(search) == 0:
+            return
 
-    lc: TessLightCurve = search[0].download()
+        lc: TessLightCurve = search[0].download()
 
-    lc.to_fits(
-        path=f"{folder_path}/{tid}.fits",
-        overwrite=overwrite
-    )
-    return None
+        lc.to_fits(
+            path=f"{folder_path}/{tid}.fits",
+            overwrite=overwrite
+        )
+    except Exception as err:
+        print(f"Error processing {tid}: {err}")
 
 
 def load_catalog(data: str) -> pd.DataFrame:
