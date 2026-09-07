@@ -138,7 +138,6 @@ plt.show()
     
 
 
-Periyodu bulduktan sonra periyodun ilk keşfedildiği zamandan başlayarak veriyi "katlamamız" gerekiyor.<br>
 We need to "fold" data from the transit period the BLS algorithm found. <br>
 We also bin the data to reduce noise. <br>
 This is what we feed into the classifier model along with statistical features of the lightcurve. <br>
@@ -332,7 +331,6 @@ features["target"].value_counts()
 
 ### 3.2 Randomized Search
 
-Randomized search için 30 hiperparametre kombinasyonu, <br>
 30 hyper-parameter combinations for Randomized Search <br>
 5-fold Cross Validation, <br>
 F1 Score for performance measurements.
